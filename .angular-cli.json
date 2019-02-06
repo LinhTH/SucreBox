@@ -17,7 +17,7 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "sucre",
       "styles": ["styles.css"],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
