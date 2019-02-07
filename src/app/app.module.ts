@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,6 +19,7 @@ import { ContainersModule } from './containers/containers.module';
     BrowserModule,
     MaterialFrameWorkModule,
     ContainersModule,
+    AppRoutingModule,
     // ComponentsModule,
   ],
   providers: [],
