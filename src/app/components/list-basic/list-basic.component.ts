@@ -7,8 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./list-basic.component.css']
 })
 export class ListBasicComponent implements OnInit {
-  @Input() folders: any[];
-  @Input() notes: any[];
   @Input() loginInfos: LoginInfo[];
 
   constructor() {}

@@ -1,10 +1,10 @@
+import { LoginInfoOverviewPageComponent } from './login-info-overview-page/login-info-overview-page.component';
 import { NgModule } from '@angular/core';
-import { PasswordOverviewPageComponent } from './password-overview-page/password-overview-page.component';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
-  declarations: [PasswordOverviewPageComponent],
+  declarations: [LoginInfoOverviewPageComponent],
   imports: [ComponentsModule],
-  exports: [PasswordOverviewPageComponent]
+  exports: [LoginInfoOverviewPageComponent]
 })
 export class ContainersModule {}
