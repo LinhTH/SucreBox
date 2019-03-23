@@ -1,28 +1,23 @@
-import { AppRoutingModule } from './app.routing';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing';
 import { MaterialFrameWorkModule } from './core/modules/material-framework.module';
-import { ComponentsModule } from './components/components.module';
-import { CommonModule } from '@angular/common';
-import { ContainersModule } from './containers/containers.module';
-
+import { PasswordOverviewModule } from './modules/password-overview/password-overview.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     CommonModule,
     BrowserModule,
     MaterialFrameWorkModule,
-    ContainersModule,
+    PasswordOverviewModule,
     AppRoutingModule,
     // ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
