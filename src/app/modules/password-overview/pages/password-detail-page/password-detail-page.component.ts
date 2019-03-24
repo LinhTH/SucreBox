@@ -19,6 +19,8 @@ export class PasswordDetailPageComponent implements OnInit {
         PasswordListSelector.getPasswordList
     );
 
+    hide = true;
+
     public readonly passwordInfo: PasswordInfo = new PasswordInfoBuilder().emptyInstance();
 
     constructor(private store: Store<AppState>,
