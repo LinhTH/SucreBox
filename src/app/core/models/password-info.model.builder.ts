@@ -52,11 +52,11 @@ export class PasswordInfoBuilder {
       throw new Error('The password is mush-have');
     }
 
-    if (_.isNil(this.createdAt)) {
+    if (_.isUndefined(this.createdAt)) {
       this.createdAt = new Date();
     }
 
-    if (_.isNil(this.modifiedAt)) {
+    if (_.isUndefined(this.modifiedAt)) {
       this.modifiedAt = new Date();
     }
 
@@ -68,5 +68,9 @@ export class PasswordInfoBuilder {
       this.createdAt,
       this.modifiedAt
     );
+  }
+
+  emptyInstance(): PasswordInfo {
+    return new PasswordInfo(null, null, null, null, null, null);
   }
 }

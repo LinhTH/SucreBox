@@ -22,6 +22,12 @@ export function passwordListReducer(
         });
       }
 
+      case PasswordListActionTypes.AddPassword: {
+        return passwordListAdapter.addOne(action.payload.newPassword, {
+          ...state,
+        });
+      }
+
       default: {
         return state;
       }

@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { PasswordDetailPageComponent } from './pages/password-detail-page/password-detail-page.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
+    FormsModule,
     CoreModule,
     PasswordOverviewRoutingModule,
     EffectsModule.forFeature([PasswordListEffects])
