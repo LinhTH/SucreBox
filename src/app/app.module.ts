@@ -4,18 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
-import { MaterialFrameWorkModule } from './core/modules/material-framework.module';
 import { PasswordOverviewModule } from './modules/password-overview/password-overview.module';
+import { Effect, EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     CommonModule,
     BrowserModule,
-    MaterialFrameWorkModule,
+    EffectsModule.forRoot([]),
     PasswordOverviewModule,
-    AppRoutingModule,
-    // ComponentsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -52,11 +52,11 @@ export class PasswordInfoBuilder {
       throw new Error('The password is mush-have');
     }
 
-    if (_.isNull(this.createdAt)) {
+    if (_.isNil(this.createdAt)) {
       this.createdAt = new Date();
     }
 
-    if (_.isNull(this.modifiedAt)) {
+    if (_.isNil(this.modifiedAt)) {
       this.modifiedAt = new Date();
     }
 
