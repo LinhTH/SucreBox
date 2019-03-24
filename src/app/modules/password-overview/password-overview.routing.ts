@@ -10,17 +10,17 @@ const passwordOverviewRoutes = [
     component: PasswordOverviewPageComponent,
     canActivate: [
       PasswordListLoader
-    ]
+    ],
   },
   {
     path: 'password-detail',
     component: PasswordDetailPageComponent
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(passwordOverviewRoutes)],
-  exports: [RouterModule],
-  providers: [PasswordListLoader]
+  providers: [PasswordListLoader],
+  exports: [RouterModule]
 })
 export class PasswordOverviewRoutingModule {}
