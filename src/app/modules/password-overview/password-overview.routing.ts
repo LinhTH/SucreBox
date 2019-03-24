@@ -1,5 +1,6 @@
+import { PasswordDetailPageComponent } from './pages/password-detail-page/password-detail-page.component';
 import { PasswordListLoader } from './services/password-list.loader';
-import { PasswordOverviewPageComponent } from './pages/password-overview-page.component';
+import { PasswordOverviewPageComponent } from './pages/password-overview-page/password-overview-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +11,10 @@ const passwordOverviewRoutes = [
     canActivate: [
       PasswordListLoader
     ]
+  },
+  {
+    path: 'password-detail',
+    component: PasswordDetailPageComponent
   }
 ];
 
