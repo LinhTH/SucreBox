@@ -1,5 +1,5 @@
+import { PasswordInfo } from './../../../../core/models/password-info.model';
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
-import { PasswordInfo } from '../../../../core/models/password-info.model';
 
 export interface PasswordListState extends EntityState<PasswordInfo> {
   loaded: boolean;
