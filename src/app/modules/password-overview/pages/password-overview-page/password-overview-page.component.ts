@@ -17,10 +17,11 @@ export class PasswordOverviewPageComponent {
     PasswordListSelector.getPasswordList
   );
 
+  hide = true;
+
   displayedColumns: string[] = ['Title', 'Username', 'Password'];
 
-  constructor(private store: Store<AppState>,
-    private router: Router) {}
+  constructor(private store: Store<AppState>, private router: Router) {}
 
   addNewPassword(): void {
     this.router.navigate(['password-detail']);

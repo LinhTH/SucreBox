@@ -12,7 +12,7 @@ import { PasswordListActions } from '../../services/password-list.action';
 @Component({
   selector: 'sucre-password-detail-page',
   templateUrl: './password-detail-page.component.html',
-    styleUrls: ['./password-detail-page.component.css']
+    styleUrls: ['./password-detail-page.component.scss']
 })
 export class PasswordDetailPageComponent implements OnInit {
     passwordInfos$: Observable<PasswordInfo[]> = this.store.select(
