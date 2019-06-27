@@ -1,4 +1,4 @@
-import { PasswordInfo } from './../../../core/models/password-info.model';
+import { PasswordInfo } from '../../../../core/models/password-info.model';
 import { Action } from '@ngrx/store';
 
 export enum PasswordListActionTypes {

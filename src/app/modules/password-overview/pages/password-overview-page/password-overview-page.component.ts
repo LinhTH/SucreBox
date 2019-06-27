@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { AppState } from '../../../../core/store/app.store';
 import { PasswordInfo } from '../../../../core/models/password-info.model';
-import { PasswordListSelector } from '../../services/password-list.selector';
+import { PasswordListSelector } from '../../store/selectors/password-list.selector';
 import { Router } from '@angular/router';
 
 @Component({

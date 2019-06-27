@@ -1,11 +1,13 @@
-import { AppState } from '../../../core/store/app.store';
 import { createSelector } from '@ngrx/store';
 
-import { passwordListAdapter, PasswordListState } from './password-list.state';
+import { getPasswordOverviewState } from '../reducers';
+import { passwordListAdapter, PasswordListState } from '../reducers/password-list.state';
+import { PasswordOverviewState } from './../reducers';
 
-function selectPasswordListState(state: AppState): PasswordListState {
-  return state.passwordList;
-}
+export const selectPasswordListState = createSelector(
+  getPasswordOverviewState,
+  (state: PasswordOverviewState) => state.passwordList
+);
 
 export const getPasswordListLoading = createSelector(
   selectPasswordListState,
@@ -22,7 +24,7 @@ export const { selectAll: getPasswordList } = passwordListAdapter.getSelectors(
 );
 
 export const PasswordListSelector = {
-         getPasswordListLoading: getPasswordListLoading,
-         getPasswordListLoaded: getPasswordListLoaded,
-         getPasswordList: getPasswordList
-       };
+  getPasswordListLoading,
+  getPasswordListLoaded,
+  getPasswordList
+};

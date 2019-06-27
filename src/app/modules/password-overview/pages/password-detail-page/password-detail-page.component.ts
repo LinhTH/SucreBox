@@ -5,9 +5,9 @@ import { Observable } from 'rxjs';
 
 import { PasswordInfo } from '../../../../core/models/password-info.model';
 import { AppState } from '../../../../core/store/app.store';
-import { PasswordListSelector } from '../../services/password-list.selector';
+import { PasswordListSelector } from '../../store/selectors/password-list.selector';
 import { PasswordInfoBuilder } from './../../../../core/models/password-info.model.builder';
-import { PasswordListActions } from '../../services/password-list.action';
+import { PasswordListActions } from '../../store/actions/password-list.action';
 
 @Component({
   selector: 'sucre-password-detail-page',

@@ -1,12 +1,12 @@
-import { PasswordInfoBuilder } from './../../../core/models/password-info.model.builder';
-import { PasswordListActionTypes, PasswordListActionsUnion, PasswordListActions } from './password-list.action';
+import { PasswordInfoBuilder } from '../../../../core/models/password-info.model.builder';
+import { PasswordListActionTypes, PasswordListActionsUnion, PasswordListActions } from '../actions/password-list.action';
 import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { switchMap, delay } from 'rxjs/operators';
 
-import { AppState } from '../../../core/store/app.store';
-import { PasswordInfo } from '../../../core/models/password-info.model';
+import { AppState } from '../../../../core/store/app.store';
+import { PasswordInfo } from '../../../../core/models/password-info.model';
 
 @Injectable()
 export class PasswordListEffects {

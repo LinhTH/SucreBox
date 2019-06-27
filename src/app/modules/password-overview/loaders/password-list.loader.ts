@@ -4,8 +4,8 @@ import { combineLatest, Observable } from 'rxjs';
 import { switchMap, take, tap } from 'rxjs/operators';
 
 import { AppState } from '../../../core/store/app.store';
-import { PasswordListActions } from './password-list.action';
-import { PasswordListSelector } from './password-list.selector';
+import { PasswordListActions } from '../store/actions/password-list.action';
+import { PasswordListSelector } from '../store/selectors/password-list.selector';
 
 @Injectable()
 export class PasswordListLoader {
