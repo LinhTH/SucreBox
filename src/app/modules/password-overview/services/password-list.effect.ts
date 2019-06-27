@@ -5,7 +5,7 @@ import { Actions, Effect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
 import { switchMap, delay } from 'rxjs/operators';
 
-import { AppState } from '../../../core/store/reducer';
+import { AppState } from '../../../core/store/app.store';
 import { PasswordInfo } from '../../../core/models/password-info.model';
 
 @Injectable()

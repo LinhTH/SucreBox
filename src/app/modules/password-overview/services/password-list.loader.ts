@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { combineLatest, Observable } from 'rxjs';
 import { switchMap, take, tap } from 'rxjs/operators';
 
-import { AppState } from '../../../core/store/reducer';
+import { AppState } from '../../../core/store/app.store';
 import { PasswordListActions } from './password-list.action';
 import { PasswordListSelector } from './password-list.selector';
 

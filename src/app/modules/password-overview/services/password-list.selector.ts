@@ -1,4 +1,4 @@
-import { AppState } from './../../../core/store/reducer';
+import { AppState } from '../../../core/store/app.store';
 import { createSelector } from '@ngrx/store';
 
 import { passwordListAdapter, PasswordListState } from './password-list.state';

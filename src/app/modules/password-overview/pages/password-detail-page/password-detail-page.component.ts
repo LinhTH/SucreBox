@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { PasswordInfo } from '../../../../core/models/password-info.model';
-import { AppState } from '../../../../core/store/reducer';
+import { AppState } from '../../../../core/store/app.store';
 import { PasswordListSelector } from '../../services/password-list.selector';
 import { PasswordInfoBuilder } from './../../../../core/models/password-info.model.builder';
 import { PasswordListActions } from '../../services/password-list.action';

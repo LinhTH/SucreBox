@@ -1,6 +1,6 @@
-import { PasswordListState } from './../../modules/password-overview/services/password-list.state';
+import { PasswordListState } from '../../modules/password-overview/services/password-list.state';
 import { Action, ActionReducer, ActionReducerMap, MetaReducer } from '@ngrx/store';
-import { passwordListReducer } from './../../modules/password-overview/services/password-list.reducer';
+import { passwordListReducer } from '../../modules/password-overview/services/password-list.reducer';
 
 interface AppState {
     passwordList: PasswordListState;

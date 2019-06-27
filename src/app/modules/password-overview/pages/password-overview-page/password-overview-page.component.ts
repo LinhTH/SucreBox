@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
-import { AppState } from '../../../../core/store/reducer';
+import { AppState } from '../../../../core/store/app.store';
 import { PasswordInfo } from '../../../../core/models/password-info.model';
 import { PasswordListSelector } from '../../services/password-list.selector';
 import { Router } from '@angular/router';
