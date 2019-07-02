@@ -1,4 +1,3 @@
-import { MaterialFrameWorkModule } from './../../share/material-framework.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -6,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
-import { ShareModule } from './../../share/share.module';
+import { MaterialFrameWorkModule } from './../../share/material-framework.module';
 import { PasswordDetailPageComponent } from './containers/password-detail-page/password-detail-page.component';
 import { PasswordOverviewPageComponent } from './containers/password-overview-page/password-overview-page.component';
 import { PasswordOverviewRoutingModule } from './password-overview.routing';
@@ -17,7 +16,6 @@ import { FEATURE_STORE_NAME, passwordOverviewReducers } from './store/reducers';
   declarations: [PasswordOverviewPageComponent, PasswordDetailPageComponent],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
     FormsModule,
     MaterialFrameWorkModule,
     PasswordOverviewRoutingModule,

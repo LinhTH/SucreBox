@@ -24,6 +24,6 @@ export class PasswordOverviewPageComponent {
   constructor(private store: Store<AppState>, private router: Router) {}
 
   addNewPassword(): void {
-    this.router.navigate(['password-detail']);
+    this.router.navigate(['password-overview/detail']);
   }
 }

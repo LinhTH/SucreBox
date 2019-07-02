@@ -9,7 +9,15 @@ import { RouterModule, Routes } from '@angular/router';
 export class NotFoundComponent {}
 
 const AppRoutes: Routes = [
-  { path: '', redirectTo: '/password-overview', pathMatch: 'full' },
+  {
+    path: 'password-overview',
+    loadChildren: './modules/password-overview/password-overview.module#PasswordOverviewModule'
+  },
+  {
+    path: 'password-count',
+    loadChildren:
+      './modules/password-count/password-count.module#PasswordCountModule'
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
