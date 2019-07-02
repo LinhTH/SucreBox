@@ -1,4 +1,3 @@
-import { PasswordDetailPageComponent } from './modules/password-overview/pages/password-detail-page/password-detail-page.component';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { PasswordInfo } from '../../../../core/models/password-info.model';
 import { AppState } from '../../../../core/store/app.store';
 import { PasswordListSelector } from '../../store/selectors/password-list.selector';
-import { PasswordInfoBuilder } from './../../../../core/models/password-info.model.builder';
+import { PasswordInfoBuilder } from '../../../../core/models/password-info.model.builder';
 import { PasswordListActions } from '../../store/actions/password-list.action';
 
 @Component({

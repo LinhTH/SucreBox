@@ -1,6 +1,6 @@
-import { PasswordDetailPageComponent } from './pages/password-detail-page/password-detail-page.component';
+import { PasswordDetailPageComponent } from './containers/password-detail-page/password-detail-page.component';
 import { PasswordListLoader } from './store/loaders/password-list.loader';
-import { PasswordOverviewPageComponent } from './pages/password-overview-page/password-overview-page.component';
+import { PasswordOverviewPageComponent } from './containers/password-overview-page/password-overview-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 

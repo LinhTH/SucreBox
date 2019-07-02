@@ -7,8 +7,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
 import { ShareModule } from './../../share/share.module';
-import { PasswordDetailPageComponent } from './pages/password-detail-page/password-detail-page.component';
-import { PasswordOverviewPageComponent } from './pages/password-overview-page/password-overview-page.component';
+import { PasswordDetailPageComponent } from './containers/password-detail-page/password-detail-page.component';
+import { PasswordOverviewPageComponent } from './containers/password-overview-page/password-overview-page.component';
 import { PasswordOverviewRoutingModule } from './password-overview.routing';
 import { PasswordListEffects } from './store/effects/password-list.effect';
 import { FEATURE_STORE_NAME, passwordOverviewReducers } from './store/reducers';
