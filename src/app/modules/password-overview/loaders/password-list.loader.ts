@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { combineLatest, Observable } from 'rxjs';
+import { combineLatest, Observable, Subscription } from 'rxjs';
 import { switchMap, take, tap } from 'rxjs/operators';
 
 import { AppState } from '../../../core/store/app.store';
@@ -8,7 +8,9 @@ import { PasswordListActions } from '../store/actions/password-list.action';
 import { PasswordListSelector } from '../store/selectors/password-list.selector';
 
 @Injectable()
-export class PasswordListLoader {
+export class PasswordListLoader implements OnDestroy {
+  private subscription: Subscription;
+
   constructor(private store: Store<AppState>) {}
 
   private _loadDate = (): Observable<[boolean, boolean]> => {
@@ -25,7 +27,14 @@ export class PasswordListLoader {
     );
   }
 
-  canActivate(): Observable<boolean> {
-    return this._loadDate().pipe(switchMap(() => [true]));
+  canActivate(): boolean {
+    if (!this.subscription) {
+      this.subscription = this._loadDate().subscribe();
+    }
+    return true;
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
