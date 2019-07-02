@@ -3,9 +3,9 @@ import { Store } from '@ngrx/store';
 import { combineLatest, Observable, Subscription } from 'rxjs';
 import { take, tap } from 'rxjs/operators';
 
-import { AppState } from '../../../core/store/app.store';
-import { PasswordListActions } from '../store/actions/password-list.action';
-import { PasswordListSelector } from '../store/selectors/password-list.selector';
+import { AppState } from '../../../../core/store/app.store';
+import { PasswordListActions } from '../actions/password-list.action';
+import { PasswordListSelector } from '../selectors/password-list.selector';
 
 @Injectable()
 export class PasswordListLoader implements OnDestroy {
