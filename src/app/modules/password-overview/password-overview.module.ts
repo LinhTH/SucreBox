@@ -1,3 +1,4 @@
+import { MaterialFrameWorkModule } from './../../share/material-framework.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +19,7 @@ import { FEATURE_STORE_NAME, passwordOverviewReducers } from './store/reducers';
     CommonModule,
     BrowserAnimationsModule,
     FormsModule,
-    ShareModule,
+    MaterialFrameWorkModule,
     PasswordOverviewRoutingModule,
     StoreModule.forFeature(FEATURE_STORE_NAME, passwordOverviewReducers),
     EffectsModule.forFeature([PasswordListEffects])
