@@ -1,7 +1,7 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { combineLatest, Observable, Subscription } from 'rxjs';
-import { switchMap, take, tap } from 'rxjs/operators';
+import { take, tap } from 'rxjs/operators';
 
 import { AppState } from '../../../core/store/app.store';
 import { PasswordListActions } from '../store/actions/password-list.action';
