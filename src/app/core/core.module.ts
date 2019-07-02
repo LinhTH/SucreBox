@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { MaterialFrameWorkModule } from './modules/material-framework.module';
+import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
+
 import { appReducers, metaReducers } from './store/app.store';
 
 @NgModule({
-    imports: [
-        StoreModule.forRoot(appReducers, { metaReducers }),
-    ],
-    exports: [
-        MaterialFrameWorkModule,
-        StoreModule,
-    ]
+  imports: [
+    StoreModule.forRoot(appReducers, { metaReducers }),
+    EffectsModule.forRoot([])
+  ]
 })
 export class CoreModule {}

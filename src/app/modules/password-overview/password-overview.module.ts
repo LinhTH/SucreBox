@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
-import { CoreModule } from './../../core/core.module';
+import { ShareModule } from './../../share/share.module';
 import { PasswordDetailPageComponent } from './pages/password-detail-page/password-detail-page.component';
 import { PasswordOverviewPageComponent } from './pages/password-overview-page/password-overview-page.component';
 import { PasswordOverviewRoutingModule } from './password-overview.routing';
@@ -18,7 +18,7 @@ import { FEATURE_STORE_NAME, passwordOverviewReducers } from './store/reducers';
     CommonModule,
     BrowserAnimationsModule,
     FormsModule,
-    CoreModule,
+    ShareModule,
     PasswordOverviewRoutingModule,
     StoreModule.forFeature(FEATURE_STORE_NAME, passwordOverviewReducers),
     EffectsModule.forFeature([PasswordListEffects])
